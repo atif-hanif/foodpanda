@@ -1,5 +1,5 @@
 html, body {
-  background: url(animation.gif);
+  /* background: url(animation.gif); */
   color: black;
   height: 100%;
   background-repeat: no-repeat;
@@ -23,9 +23,9 @@ body {
 }
 
 .timer {
-  font-size: 200px;
-  display: flex;
-  justify-content: center;
+  font-size: 45px;
+  color: #d70f64;
+  text-align: left;
 }
 
 .jst-hours {
@@ -65,4 +65,43 @@ body {
   width: 130px;
   height: 130px;
   padding: 15px
+}
+
+h3 {
+  color: #d70f64;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.start-time {
+  color: #d70f64;
+  text-align: right;
+  font-size: 45px;
+  border-right: 2px solid #d70f64;
+  padding-right: 30px;
+}
+
+.time {
+  text-align: center;
+}
+
+.profile-img {
+  border: 3px solid #d70f64;
+  border-radius: 10px;
+  width: 125px;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 500;
+  float: left;
+}
+
+.form-control {
+  background-color: #d70f64;
+  border-radius: 15px;
+}
+
+.form-control::placeholder {
+  color: #fff;
 }
