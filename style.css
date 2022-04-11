@@ -35,12 +35,15 @@ header {
 .jst-hours {
   float: left;
 }
+
 .jst-minutes {
   float: left;
 }
+
 .jst-seconds {
   float: left;
 }
+
 .jst-clearDiv {
   clear: both;
 }
@@ -56,6 +59,7 @@ header {
   -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
   -webkit-animation-duration: 1s;
 }
+
 @-webkit-keyframes blinker {
   from { opacity: 1.0; }
   to { opacity: 0.0; }
@@ -110,11 +114,31 @@ label {
   color: #fff;
 }
 
-.rotate {
-  animation: rotation 8s infinite linear;
+.rotate1 {
+  animation: rotation1 8s infinite linear;
 }
 
-.container img {
+.rotate2 {
+  animation: rotation2 8s infinite linear;
+}
+
+@keyframes rotation1 {
+  0% {transform: rotate(0deg); }
+  25% {transform: rotate(90deg); }
+  50% {transform: rotate(0deg); }
+  75% {transform: rotate(-90deg); }
+  100% {transform: rotate(0deg); }
+}
+
+@keyframes rotation2 {
+  0% {transform: rotate(0deg); }
+  25% {transform: rotate(-90deg); }
+  50% {transform: rotate(0deg); }
+  75% {transform: rotate(90deg); }
+  100% {transform: rotate(0deg); }
+}
+
+/*.container img {
   position: absolute;
   transition: 0.5s;
 }
@@ -197,9 +221,9 @@ label {
 .container:hover img.game-img:nth-child(1) {
   transform: translate(40px, 40px);
   opacity: 0.4;
-}
+}*/
 
-.bubble1 {
+/*.bubble1 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -388,4 +412,4 @@ label {
   90% {
     transform: translateX(-500px) translateY(-443px);
   }
-}
+}*/
