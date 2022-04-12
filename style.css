@@ -17,13 +17,13 @@ body {
   vertical-align: middle;
 }
 
-header {
-  margin-top:-200px;
-}
-
 .container {
   font-size: 100pt;
   text-align: center;
+}
+
+.logo {
+  width: 175px;
 }
 
 .timer {
@@ -48,9 +48,9 @@ header {
   clear: both;
 }
 
-.bodyTimeoutBackground {
+/*.bodyTimeoutBackground {
   background: black;
-}
+}*/
 
 .timeout {
   color: red;
@@ -103,6 +103,10 @@ label {
   font-size: 15px;
   font-weight: 500;
   float: left;
+}
+
+.form-row {
+  margin-top: 200px ;
 }
 
 .form-control {
